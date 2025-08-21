@@ -27,25 +27,31 @@ Portfolio: (link)
 - OWASP ASVS 5.2.7
 <img width="695" height="63" alt="location origin" src="https://github.com/user-attachments/assets/a6a1cb97-9ae3-442f-b655-9098f47e396a" />
 
-3. Lease Privilege UI
+3. Least Privilege UI
 - Prevents Interaction during load; minimizes automated or accidental actions
 - OWASP ASVS 1.1
 <img width="326" height="38" alt="lock down cross frame messaging" src="https://github.com/user-attachments/assets/5a56e868-00ac-40ff-8d59-4ece13f65207" />
 
 4. No Inline Event Handlers
-- No Inline JavaScript or onclick used
-- All logic is handled in <script> blocks
-- The site is prepared for strick Content Security Policy (CSP)
+- No Inline JavaScript or onclick used in HTML elements 
+- All logic is handled in <script> blocks using addEventListener
+- The site is prepared for strict Content Security Policy (CSP) with minor adjustments if externalization is required
 - OWASP ASVS 14.3
 <img width="939" height="431" alt="child-parent" src="https://github.com/user-attachments/assets/32438fef-8301-4f57-aa51-b553631c03ac" />
-
+<img width="855" height="468" alt="child parent 2" src="https://github.com/user-attachments/assets/750fb3a4-c285-4b6a-ae80-14a14a82549d" />
 5. No Third-Party Remote JS
 - There are no external CDNs or remote JavaScript dependencies
-- This elminates supply-chain risk
+- This eliminates supply-chain risk
 - OWASP ASVS 14.2
-<img width="855" height="468" alt="child parent 2" src="https://github.com/user-attachments/assets/750fb3a4-c285-4b6a-ae80-14a14a82549d" />
 
 6. Deployment Headers
-- Strengthens security at the hosting later where a _headers file is included
+- Strengthens security at the hosting layer where a _headers file is included
 <img width="1570" height="330" alt="header script" src="https://github.com/user-attachments/assets/f821865d-bd82-421e-a71e-d31e331abf14" />
 
+This Project not only demonstrates front-end design but practical applications of OWASP security controls. Applying sandboxing, strict origin checks, least privilege principles, CSP readiness and secure headers, The portfolio site is resilient against common web threats.
+
+---
+
+# References
+- [OWASP Application Security Verification Standard (ASVS)](https://owasp.org/ASVS/)  
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/)  
