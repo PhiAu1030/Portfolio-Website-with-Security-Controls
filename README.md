@@ -47,4 +47,5 @@ Portfolio: (link)
 
 6. Deployment Headers
 - Strengthens security at the hosting later where a _headers file is included
-<img width="618" height="86" alt="header files" src="https://github.com/user-attachments/assets/6737518c-3953-4b33-a5e0-52d72f81b7c4" />
+<img width="1570" height="330" alt="header script" src="https://github.com/user-attachments/assets/f821865d-bd82-421e-a71e-d31e331abf14" />
+
