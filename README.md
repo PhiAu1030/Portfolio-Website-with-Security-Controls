@@ -46,7 +46,9 @@ Portfolio: (link)
 - X-Frame Options in depth for clickjacking defense
 - X-Content-Type-Options - nosniff for MIME sniffing protection
 - Referrer-Policy - strict-origin-when-cross-origin
-- Permission-Policy - disables camera, mic, and geolocation 
+- Permission-Policy - disables camera, mic, and geolocation
+
+---
 
 # Lessons Learned & Key Takeways
 This Project not only demonstrates front-end design but practical applications of OWASP security controls. Applying sandboxing, strict origin checks, least privilege principles, CSP readiness and secure headers, The portfolio site is resilient against common web threats.
