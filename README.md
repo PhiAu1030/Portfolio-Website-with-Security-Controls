@@ -1,15 +1,39 @@
 # Portfolio-Website-with-Security-Controls
 Built a portfolio website with HTML, CSS and JavaScript, and then implemented security controls aligning with OWASP practices.
 This is focused on the security controls and design choice behind it. 
-Portfolio: (link) 
+
+Live Site of Portfolio: https://phiauvuportfolio.netlify.app/ 
 
 ---
 
 # Project Overview
-- Technology: HTML, CSS, JavaScript, VSCode
-- Theme: HUD-style interface with boot up animation, circuits connecting to node navigations, with matrix background
-- Layout: Used a dual Desktop and Mobile version where it automatically switches to correct one based on device orientation via a main HTML file
-- Interactivity: Sound effects when hovered over nodes, dynamic SVG circuit lines, and responsive scaling
+A sci-fi HUD themed interface with animated circuits, glowing borders, and node-based navigation. The project uses two pur[ose-built UIs:
+Desktop: A widescreen with stronger effects
+Mobile: portrait focused and simplified layout
+
+Goal: Showcase front-end alongside security awareness with practical deployment controls.
+
+
+---
+
+# Archtecture (HTML, CSS, JS)
+- Index: The controller of the website to load both UIs
+- Desktop: Full Experience on the big screen
+- Mobile: For portrait/vertical screens
+
+I chose two UIs because due to the desktop HUD layout (circuits, big HUD, and nodes) responsive pages were out of reach. Creating the two UIs implemented an alternative to responsiveness. 
+
+Note: The website is optimized for desktop portrait/landscape and mobile portrait only. Mobile landscape is intentionally not supported to keep UX clean and predictable.
+
+---
+
+# Features 
+- Animated HUD (inner border glow, and boot sequence)
+- Node navigation with section syncing
+- Mobile for vertical/portrait layout, Desktop horizontal/landscape layout
+- Harden deployment headers (CSP, XFO, referrer, etc.)
+- No inline JS, self-hosted scripts and assets
+- Used Netlify with '_headers' for security controls
 
 ---
 
